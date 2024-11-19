@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "vite --config vite.js --host",
     "c": "vite clean --force",
-    "build": "vite b",
+    "build": "vite build",
     "preview": "vite preview --host"
   },
   "dependencies": {
-    "cradova": "^3.5.0",
+    "cradova": "^3.5.2",
     "dynamic-import-polyfill": "^0.1.1",
     "notyf": "^3.10.0"
   },

@@ -1,35 +1,35 @@
-import { a, button, div, h1, h2, p, Page, raw } from "cradova";
-
-export const aboutPage = new Page({
-  snapshotIsolation: true,
-  template() {
-    return div(
-      {
-        className: "px-[20vw] py-[20vh]",
-      },
-      h1("Cradova", { className: "text-[5rem] mb-[1.2rem]" }),
-      h2("What is Cradova?", { className: "text-[2rem]" }),
-      p(`What is Cradova?
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#fcfcfca9">
+    <meta name="background-color" content="#fcfcfca9">
+    <title>Cradova - CSSR</title>
+    <!-- Title -->
+    <meta property="og:title" content="cssr">
+    <!-- Image -->
+    <meta property="og:image" content="/icon.png">
+    <meta name="description" content="cssr">
+    <meta property="og:description" content="cssr">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta data-hid="charset" charset="utf-8">
+    <meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="cssr">
+    <meta data-hid="og:title" name="og:title" property="og:title" content="cssr">
+    <meta data-hid="og:site_name" name="og:site_name" property="og:site_name" content="cssr">
+    <meta property="og:url" content="https://cssr.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/icon.png" sizes="any">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <script type="module" crossorigin="" src="/assets/index-BYfjhEWb.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-eRxwVoVc.css">
+  </head>
+  <body>
+    <div data-wrapper="app" data-snapshot="true"><div id="page"><div class="px-[20vw] py-[20vh]"><h1 class="text-[5rem] mb-[1.2rem]">Cradova</h1><h2 class="text-[2rem]">What is Cradova?</h2><p>What is Cradova?
         Cradova is a web development framework for building Single Page Applications and PWAs.
-        `),
-      h2("What's the benefit?", { className: "text-[2rem] mt-[2rem]" }),
-      p(`Fast and simple with and fewer abstractions and yet easily composable.
-        Cradova is not built on diff algorithms. Instead, State management is done in a way that is simple, easy and fast.`),
-      a(
-        {
-          href: "https://github.com/Uiedbook/cradova",
-          className:
-            "w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]",
-        },
-        button("find more about cradova 💓", {
-          className: "text-[#fff] text-[1.7rem]",
-        }),
-      ),
-      h2("How old is Cradova?", { className: "text-[2rem] mt-[2rem]" }),
-      raw(`<div
-        class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]"
-  dir="auto"
->
+        </p><h2 class="text-[2rem] mt-[2rem]">What's the benefit?</h2><p>Fast and simple with and fewer abstractions and yet easily composable.
+        Cradova is not built on diff algorithms. Instead, State management is done in a way that is simple, easy and fast.</p><a href="https://github.com/Uiedbook/cradova" class="w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]"><button class="text-[#fff] text-[1.7rem]">find more about cradova 💓</button></a><h2 class="text-[2rem] mt-[2rem]">How old is Cradova?</h2><div class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]" dir="auto">
 <pre><span class="pl-k">const</span> <span class="pl-v">Cradova</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Comp</span><span class="pl-kos">(</span><span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
   <span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">year</span><span class="pl-kos">,</span> <span class="pl-s1">setYear</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-en">useState</span><span class="pl-kos">(</span><span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-smi">this</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
   <span class="pl-k">return</span> <span class="pl-en">h1</span><span class="pl-kos">(</span><span class="pl-s">"Cradova is "</span> <span class="pl-c1">+</span> <span class="pl-s1">year</span> <span class="pl-c1">+</span> <span class="pl-s">" yrs old in "</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
@@ -41,14 +41,7 @@ export const aboutPage = new Page({
   <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-v">Cradova</span><span class="pl-kos">.</span><span class="pl-en">render</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
-</div>`),
-      h2("Here's a simple Todo component you want to see!", {
-        className: "text-[2rem] mt-[2rem]",
-      }),
-      raw(`<div
-class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]"
-  dir="auto"
-  >
+</div><h2 class="text-[2rem] mt-[2rem]">Here's a simple Todo component you want to see!</h2><div class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]" dir="auto">
   <pre><span class="pl-k">import</span> <span class="pl-kos">{</span>
   <span class="pl-s1">button</span><span class="pl-kos">,</span>
   <span class="pl-v">Comp</span><span class="pl-kos">,</span>
@@ -113,25 +106,7 @@ class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebecc
   <span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-v">TodoList</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
-</div>
-<p dir="auto" class="mt-8">Join Us on <a href="https://t.me/UiedbookHQ" rel="nofollow">telegram</a>.</p>
-`),
-      h2("Contribution and License Agreement", {
-        className: "text-[2rem] mt-[2rem]",
-      }),
-      p(
-        `If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work.`,
-      ),
-      a(
-        {
-          href: "https://github.com/Uiedbook/cradova",
-          className:
-            "w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]",
-        },
-        button("find more about cradova 💓", {
-          className: "text-[#fff] text-[1.7rem]",
-        }),
-      ),
-    );
-  },
-});
+</div><p dir="auto" class="mt-8">Join Us on <a href="https://t.me/UiedbookHQ" rel="nofollow">telegram</a>.</p><h2 class="text-[2rem] mt-[2rem]">Contribution and License Agreement</h2><p>If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work.</p><a href="https://github.com/Uiedbook/cradova" class="w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]"><button class="text-[#fff] text-[1.7rem]">find more about cradova 💓</button></a></div></div></div>
+  
+
+</body></html>

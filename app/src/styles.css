@@ -1,8 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   width: 100vw;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* editor colors */
+  --color-prettylights-syntax-keyword: #f0883e;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --fgColor-default: #f0f6fc;
 }
 body div {
   display: flex;
@@ -62,4 +71,16 @@ img {
   100% {
     transform: translateX(-50%) rotate(360deg);
   }
+}
+
+.pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+.pl-e,
+.pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.pl-s {
+  color: var(--color-prettylights-syntax-string);
 }

@@ -1,32 +1,7 @@
-import { a, button, div, h1, h2, p, Page, raw } from "cradova";
-
-export const aboutPage = new Page({
-  snapshotIsolation: true,
-  template() {
-    return div(
-      {
-        className: "px-[20vw] py-[20vh]",
-      },
-      h1("Cradova", { className: "text-[5rem] mb-[1.2rem]" }),
-      h2("What is Cradova?", { className: "text-[2rem]" }),
-      p(`What is Cradova?
+import{q as c,R as o,o as e,v as s,I as a,N as p,c as n,a as l}from"./index-BYfjhEWb.js";const k=new c({snapshotIsolation:!0,template(){return o({className:"px-[20vw] py-[20vh]"},e("Cradova",{className:"text-[5rem] mb-[1.2rem]"}),s("What is Cradova?",{className:"text-[2rem]"}),a(`What is Cradova?
         Cradova is a web development framework for building Single Page Applications and PWAs.
-        `),
-      h2("What's the benefit?", { className: "text-[2rem] mt-[2rem]" }),
-      p(`Fast and simple with and fewer abstractions and yet easily composable.
-        Cradova is not built on diff algorithms. Instead, State management is done in a way that is simple, easy and fast.`),
-      a(
-        {
-          href: "https://github.com/Uiedbook/cradova",
-          className:
-            "w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]",
-        },
-        button("find more about cradova 💓", {
-          className: "text-[#fff] text-[1.7rem]",
-        }),
-      ),
-      h2("How old is Cradova?", { className: "text-[2rem] mt-[2rem]" }),
-      raw(`<div
+        `),s("What's the benefit?",{className:"text-[2rem] mt-[2rem]"}),a(`Fast and simple with and fewer abstractions and yet easily composable.
+        Cradova is not built on diff algorithms. Instead, State management is done in a way that is simple, easy and fast.`),p({href:"https://github.com/Uiedbook/cradova",className:"w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]"},n("find more about cradova 💓",{className:"text-[#fff] text-[1.7rem]"})),s("How old is Cradova?",{className:"text-[2rem] mt-[2rem]"}),l(`<div
         class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]"
   dir="auto"
 >
@@ -41,11 +16,7 @@ export const aboutPage = new Page({
   <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-v">Cradova</span><span class="pl-kos">.</span><span class="pl-en">render</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
-</div>`),
-      h2("Here's a simple Todo component you want to see!", {
-        className: "text-[2rem] mt-[2rem]",
-      }),
-      raw(`<div
+</div>`),s("Here's a simple Todo component you want to see!",{className:"text-[2rem] mt-[2rem]"}),l(`<div
 class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebeccapurple] p-6 text-[#f0f6fc]"
   dir="auto"
   >
@@ -115,23 +86,4 @@ class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebecc
 <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-v">TodoList</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
 </div>
 <p dir="auto" class="mt-8">Join Us on <a href="https://t.me/UiedbookHQ" rel="nofollow">telegram</a>.</p>
-`),
-      h2("Contribution and License Agreement", {
-        className: "text-[2rem] mt-[2rem]",
-      }),
-      p(
-        `If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work.`,
-      ),
-      a(
-        {
-          href: "https://github.com/Uiedbook/cradova",
-          className:
-            "w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]",
-        },
-        button("find more about cradova 💓", {
-          className: "text-[#fff] text-[1.7rem]",
-        }),
-      ),
-    );
-  },
-});
+`),s("Contribution and License Agreement",{className:"text-[2rem] mt-[2rem]"}),a("If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work."),p({href:"https://github.com/Uiedbook/cradova",className:"w-fit px-4 py-6 rounded-[999px] m-auto bg-[rebeccapurple] mt-[2rem]"},n("find more about cradova 💓",{className:"text-[#fff] text-[1.7rem]"})))}});export{k as aboutPage};
