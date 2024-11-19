@@ -9,10 +9,10 @@ Bun.serve({
         return /\.\w{2,4}$/.test(path)
           ? new Response(file)
           : new Response(indexFile, {
-              headers: {
-                "Content-Type": "text/html;charset=utf-8",
-              },
-            });
+            headers: {
+              "Content-Type": "text/html;charset=utf-8",
+            },
+          });
       }
       return new Response(indexFile, {
         headers: {
