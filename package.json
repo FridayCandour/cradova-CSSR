@@ -1,0 +1,13 @@
+{
+  "name": "CSSR",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bun": "^1.1.12"
+  }
+}
