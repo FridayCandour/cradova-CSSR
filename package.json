@@ -1,13 +1,14 @@
 {
   "name": "CSSR",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bun.ts",
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
     "@types/bun": "^1.1.12"
   }
 }
