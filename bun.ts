@@ -1,4 +1,4 @@
-const indexFile = Bun.file("./app/dist/index.html");
+const indexFile = Bun.file("app/dist/index.html");
 const rg = /\.\w{2,4}$/; //? file with extension pattern
 Bun.serve({
   port: 3001,
