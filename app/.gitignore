@@ -1,3 +1,4 @@
-/node_modules
-./dist
+/node_modules 
 **.tgz
+./app/node_modules 
+./app/**.tgz
