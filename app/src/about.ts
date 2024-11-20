@@ -6,6 +6,14 @@ export const aboutPage = new Page({
     return div(
       {
         className: "px-[20vw] py-[20vh]",
+        onmount() {
+          const wrapper = document.querySelector(
+            "[data-wrapper]"
+          ) as HTMLElement;
+          if (wrapper.dataset.snapshot === "true") {
+            alert("rendered from snapshot");
+          }
+        },
       },
       h1("Cradova", { className: "text-[5rem] mb-[1.2rem]" }),
       h2("What is Cradova?", { className: "text-[2rem]" }),
@@ -23,7 +31,7 @@ export const aboutPage = new Page({
         },
         button("find more about cradova 💓", {
           className: "text-[#fff] text-[1.7rem]",
-        }),
+        })
       ),
       h2("How old is Cradova?", { className: "text-[2rem] mt-[2rem]" }),
       raw(`<div
@@ -120,7 +128,7 @@ class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebecc
         className: "text-[2rem] mt-[2rem]",
       }),
       p(
-        `If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work.`,
+        `If you contribute code to this project, you are implicitly allowing your code to be distributed under same license. You are also implicitly verifying that all code is your original work.`
       ),
       a(
         {
@@ -130,8 +138,8 @@ class="notranslate position-relative overflow-auto mt-12 w-fit m-auto bg-[rebecc
         },
         button("find more about cradova 💓", {
           className: "text-[#fff] text-[1.7rem]",
-        }),
-      ),
+        })
+      )
     );
   },
 });

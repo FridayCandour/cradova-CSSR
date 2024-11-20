@@ -3,7 +3,8 @@ const rg = /\.\w{2,4}$/; //? file with extension pattern
 Bun.serve({
   port: 3001,
   async fetch(req) {
-    const path = "app/dist" + req.url.slice(req.url.indexOf("/", 7));
+    const p = req.url.slice(req.url.indexOf("/", 7));
+    const path = "app/dist/" + (rg.test(p) ? p : encodeURIComponent(p));
     const file = Bun.file(path);
     if (req.method === "GET") {
       if (await file.exists()) {
@@ -29,13 +30,10 @@ Bun.serve({
       if (!allowedOrigins.includes(req.headers.get("origin"))) {
         return Response(JSON.stringify({ ok: false }));
       }
-      const key = "app/dist" + req.headers.get("cradova-snapshot");
-      if (key) {
-        const html = await req.text();
-        if (html) {
-          await Bun.write(key, html);
-        }
-      }
+      const key =
+        "app/dist/" + encodeURIComponent(req.headers.get("cradova-snapshot"));
+      const html = await req.text();
+      if (html) if (!(await Bun.file(key).exists())) await Bun.write(key, html);
     } catch (error) {
       console.log(error);
     }

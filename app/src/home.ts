@@ -5,7 +5,17 @@ export const homePage = new Page({
   name: "Cradova - CSSR",
   template() {
     return div(
-      { className: "rocket-container" },
+      {
+        className: "rocket-container",
+        onmount() {
+          const wrapper = document.querySelector(
+            "[data-wrapper]"
+          ) as HTMLElement;
+          if (wrapper.dataset.snapshot === "true") {
+            alert("rendered from snapshot");
+          }
+        },
+      },
       button("About", {
         className:
           "m-auto w-fit bg-[rebeccapurple] py-4 px-8 rounded-[999px] text-[#fff] text-[1.6rem]",
@@ -19,7 +29,7 @@ export const homePage = new Page({
         onanimationend(this: HTMLImageElement) {
           this.classList.add("orbit");
         },
-      }),
+      })
     );
   },
 });

@@ -1,0 +1,32 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#fcfcfca9">
+    <meta name="background-color" content="#fcfcfca9">
+    <title>Cradova - CSSR</title>
+    <!-- Title -->
+    <meta property="og:title" content="cssr">
+    <!-- Image -->
+    <meta property="og:image" content="/icon.png">
+    <meta name="description" content="cssr">
+    <meta property="og:description" content="cssr">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta data-hid="charset" charset="utf-8">
+    <meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="cssr">
+    <meta data-hid="og:title" name="og:title" property="og:title" content="cssr">
+    <meta data-hid="og:site_name" name="og:site_name" property="og:site_name" content="cssr">
+    <meta property="og:url" content="https://cssr.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/icon.png" sizes="any">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <script type="module" crossorigin="" src="/assets/index-D0jUTnUe.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-eRxwVoVc.css">
+  </head>
+  <body>
+    <div data-wrapper="app" data-snapshot="true"><div id="page"><div class="rocket-container"><button class="m-auto w-fit bg-[rebeccapurple] py-4 px-8 rounded-[999px] text-[#fff] text-[1.6rem]">About</button><img class="rocket" src="/icon.webp"></div></div></div>
+  
+
+</body></html>
