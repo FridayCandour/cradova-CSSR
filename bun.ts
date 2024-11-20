@@ -26,10 +26,10 @@ Bun.serve({
     }
     try {
       // ?  CHECK IF THE REQUEST COMES FROM THE SAME ORIGIN
-      const allowedOrigins = ["http://localhost:3001"];
-      if (!allowedOrigins.includes(req.headers.get("origin"))) {
-        return Response(JSON.stringify({ ok: false }));
-      }
+      // const allowedOrigins = ["http://localhost:3001"];
+      // if (!allowedOrigins.includes(req.headers.get("origin"))) {
+      // return Response(JSON.stringify({ ok: false }));
+      // }
       const key =
         "app/dist/" + encodeURIComponent(req.headers.get("cradova-snapshot"));
       const html = await req.text();
